@@ -4,10 +4,25 @@
             <h3 class="panel-title">Yeni grup ekleyin!</h3>
         </div>
         <div class="panel-body">
-            <form [formGroup]="form" (ngSubmit)="formSubmit(form.value)" class="site-search">
-                <div class="form-group label-floating">
-                    <label class="control-label" for="focusedInput2">örneğin, yazılım</label>
-                    <input formControlName="Name" class="form-control" id="focusedInput2" type="text" />
+
+            <form [formGroup]="form" (ngSubmit)="formSubmit(form.value)" class="tp-form">
+
+                <div class="clearfix">
+                    <mat-form-field class="tp-full-width">
+                        <input type="text" placeholder="Seçiniz" aria-label="Number" matInput
+                            formControlName="CategoryId" [matAutocomplete]="auto">
+                        <mat-autocomplete #auto="matAutocomplete">
+                            <mat-option *ngFor="let category of categories" [value]="category.id">
+                                {{category.name}}
+                            </mat-option>
+                        </mat-autocomplete>
+                    </mat-form-field>
+                </div>
+
+                <div class="clearfix">
+                    <mat-form-field class="tp-full-width">
+                        <input formControlName="Name" matInput placeholder="Örneğin; Yazılım">
+                    </mat-form-field>
                 </div>
                 <div class="form-group clearfix">
                     <div class="submit-button">

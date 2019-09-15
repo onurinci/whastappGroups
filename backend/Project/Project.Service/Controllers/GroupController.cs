@@ -22,9 +22,9 @@ namespace Project.Service.Controllers
             return await _db.Groups.AsNoTracking().ToListAsync();
         }
 
-        // POST api/group/post
+        // POST api/group/add
         [HttpPost]
-        public async Task<int> Post([FromBody] Groups postData)
+        public async Task<int> Add([FromBody] Groups postData)
         {
             try
             {

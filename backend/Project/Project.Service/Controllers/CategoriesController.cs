@@ -22,9 +22,9 @@ namespace Project.Service.Controllers
             return await _db.Categories.AsNoTracking().ToListAsync();
         }
 
-        // POST api/categories/post
+        // POST api/categories/add
         [HttpPost]
-        public async Task<int> Post([FromBody] Categories postData)
+        public async Task<int> Add([FromBody] Categories postData)
         {
             try
             {
