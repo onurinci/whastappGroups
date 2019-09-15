@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ONUR\\2_kisisel_projeler\\Github\\whastappGroups\\backend\\Project\\Project.Service\\Project.Service.csproj": {}
+    "c:\\ONUR\\2_kisisel_projeler\\Github\\whastappGroups\\backend\\Project\\Project.Service\\Project.Service.csproj": {}
   },
   "projects": {
-    "C:\\ONUR\\2_kisisel_projeler\\Github\\whastappGroups\\backend\\Project\\Project.Service\\Project.Service.csproj": {
+    "c:\\ONUR\\2_kisisel_projeler\\Github\\whastappGroups\\backend\\Project\\Project.Service\\Project.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ONUR\\2_kisisel_projeler\\Github\\whastappGroups\\backend\\Project\\Project.Service\\Project.Service.csproj",
+        "projectUniqueName": "c:\\ONUR\\2_kisisel_projeler\\Github\\whastappGroups\\backend\\Project\\Project.Service\\Project.Service.csproj",
         "projectName": "Project.Service",
-        "projectPath": "C:\\ONUR\\2_kisisel_projeler\\Github\\whastappGroups\\backend\\Project\\Project.Service\\Project.Service.csproj",
+        "projectPath": "c:\\ONUR\\2_kisisel_projeler\\Github\\whastappGroups\\backend\\Project\\Project.Service\\Project.Service.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\ONUR\\2_kisisel_projeler\\Github\\whastappGroups\\backend\\Project\\Project.Service\\obj\\",
+        "outputPath": "c:\\ONUR\\2_kisisel_projeler\\Github\\whastappGroups\\backend\\Project\\Project.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
