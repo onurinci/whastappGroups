@@ -24,9 +24,21 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/bootstrap-material-design.css",
+              "src/assets/css/ripples.min.css",
+              "src/assets/css/font-awesome.min.css",
+              "src/assets/css/style.css",
+              "src/assets/css/colors.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/js/jquery.js",
+              "src/assets/js/bootstrap.js",
+              "src/assets/js/ripples.min.js",
+              "src/assets/js/material.min.js",
+              "src/assets/js/custom.js"
+            ]
           },
           "configurations": {
             "production": {
