@@ -7,22 +7,24 @@ import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 })
 export class ApiService {
 
-  private baseUrl: string = "";
+  private apiBaseUrl: string = "https://localhost:5001";
   constructor(private _http: HttpClient) { }
 
   getSliders(): Observable<any[]> {
-    return this._http.get<any[]>(`${this.baseUrl}/api/apiData/GetSlidersList`);
+    return this._http.get<any[]>(`${this.apiBaseUrl}/api/group/list`);
   }
 
   postGroup(formData: any): Observable<number> {
 
     const httpOptions = {
-        headers: new HttpHeaders({
-            'Content-Type': 'application/json'
-        })
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
     };
 
-    return this._http.post<number>(this.baseUrl + "api/apiData/Register", formData, httpOptions);
-}
+    console.log("postGroup in service", formData);
+
+    return this._http.post<number>(`${this.apiBaseUrl}/api/group/post`, formData, httpOptions);
+  }
 
 }

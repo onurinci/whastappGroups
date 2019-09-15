@@ -15,14 +15,14 @@ namespace Project.Service.Controllers
         private readonly AppDbContext _db;
         public GroupController(AppDbContext db) => _db = db;
 
-        // GET api/groups/list?page=1&count=10
+        // GET api/group/list?page=1&count=10
         [HttpGet]
         public async Task<List<Groups>> List(int page = 1, int count = 10)
         {
             return await _db.Groups.AsNoTracking().ToListAsync();
         }
 
-        // POST api/groups/post
+        // POST api/group/post
         [HttpPost]
         public async Task<int> Post([FromBody] Groups postData)
         {
