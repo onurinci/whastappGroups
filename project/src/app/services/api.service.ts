@@ -14,7 +14,7 @@ export class ApiService {
     return this._http.get<any[]>(`${this.baseUrl}/api/apiData/GetSlidersList`);
   }
 
-  register(formData: any): Observable<number> {
+  postGroup(formData: any): Observable<number> {
 
     const httpOptions = {
         headers: new HttpHeaders({
