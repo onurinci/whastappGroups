@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from 'src/app/services/global.service';
 
 @Component({
   selector: 'app-home',
@@ -6,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  addContainer = false;
+  constructor(private _globalService: GlobalService) {
+    this._globalService.execChange.subscribe((value) => {
+      this.addContainer = value;
+    });
+  }
 
   ngOnInit() {
+    
   }
 
 }

@@ -1,1 +1,663 @@
 <app-welcome-text></app-welcome-text>
+
+<section class="section lb">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+
+                <app-add-form *ngIf="addContainer"></app-add-form>
+
+                <div class="widget nopadding clearfix">
+                    <div class="panel panel-primary nopadding">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Anahtar kelime ile grup arayın!</h3>
+                        </div>
+                        <div class="panel-body">
+                            <form class="site-search">
+                                <div class="form-group label-floating">
+                                    <label class="control-label" for="focusedInput2">örneğin, yazılım</label>
+                                    <input class="form-control" id="focusedInput2" type="text" />
+                                </div>
+                                <div class="form-group clearfix">
+                                    <div class="submit-button">
+                                        <a class="btn btn-raised btn-info gr" href="#">
+                                            <i class="material-icons">search</i> Arayın
+                                        </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="home-tab clearfix">
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="javascript:void(0)">En güncel oluşturulan gruplar</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="knowledge_tab" class="tab-pane fade in active">
+                            <aside class="topic-list">
+                                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                                    <div class="panel panel-default">
+                                        <article class="well btn-group-sm clearfix">
+                                            <div class="featured-grade btn btn-info btn-fab">
+                                                <i class="material-icons">grade</i>
+                                                <div class="ripple-container"></div>
+                                            </div>
+                                            <div class="panel-heading" role="tab" id="headingOne">
+                                                <div class="panel-title">
+                                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <header class="topic-title clearfix">
+                                                            <h3>How to create a menu with Bootstrap</h3>
+                                                            <small>Item name: Milano</small>
+                                                            <small>Version: 1.2</small>
+                                                        </header>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                                <div class="panel-body">
+                                                    <div class="topic-meta clearfix">
+                                                        <div class="pull-left">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Like">
+                                                                <i class="material-icons">thumb_up</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Un Like">
+                                                                <i class="material-icons">thumb_down</i>
+                                                            </a>
+                                                        </div><!-- end left -->
+
+                                                        <div class="pull-right">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="12 comments">
+                                                                <i class="material-icons">comment</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Bookmark">
+                                                                <i class="material-icons">bookmark_border</i>
+                                                            </a>
+                                                        </div><!-- end right -->
+                                                    </div><!-- end topic-meta -->
+
+                                                    <div class="topic-desc row-fluid clearfix">
+                                                        <div class="col-sm-2">
+                                                            <img src="assets\images\uploads\team_01.jpg" alt="" class="avatar img-circle img-responsive">
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                            <h4>Martin Martines</h4>
+                                                            <small>CEO / Founder</small>
+                                                            <p> The best way to use these Bootstrap menu on the web is with our skeleton codes. It's lightweight, easy to use, and hosted by MaxCDN. Learn how to use font-based icons in our developer guide.</p>
+                                                            <a href="single-knowlegde-base.html" class="readmore" title="">Continue reading →</a>
+                                                        </div>
+                                                    </div><!-- end tpic-desc -->
+
+                                                    <footer class="topic-footer clearfix">
+                                                        <div class="pull-left">
+                                                            <ul class="list-inline tags">
+                                                                <li><a href="#">Bootstrap</a></li>
+                                                                <li><a href="#">Web Design</a></li>
+                                                                <li><a href="#">Framework</a></li>
+                                                            </ul><!-- end tags -->
+                                                        </div>
+
+                                                        <div class="pull-right">
+                                                            <div class="customshare">
+                                                                 <div class="list">
+                                                                    <div class="btn btn-default btn-fab btn-fab-mini"><i class="material-icons">share</i>
+                                                                        <ul class="list-inline">
+                                                                            <li><a href="#" class="tw"><i class="fa fa-twitter"></i></a></li>
+                                                                            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+                                                                            <li><a href="#" class="gp"><i class="fa fa-google-plus"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </footer><!-- end topic -->
+                                                </div><!-- end panel-body -->
+                                            </div><!-- end panel-collapse -->
+                                        </article><!-- end article well -->
+                                    </div><!-- end panel -->
+
+                                    <div class="panel panel-default">
+                                        <article class="well btn-group-sm clearfix">
+                                            <div class="panel-heading" role="tab" id="headingTwo">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <header class="topic-title clearfix">
+                                                            <h3>How to create WordPress post type without a plugin</h3>
+                                                            <small>Item name: Iceland</small>
+                                                            <small>Version: 2.4</small>
+                                                        </header>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                                <div class="panel-body">
+                                                    <div class="topic-meta clearfix">
+                                                        <div class="pull-left">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Like">
+                                                                <i class="material-icons">thumb_up</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Un Like">
+                                                                <i class="material-icons">thumb_down</i>
+                                                            </a>
+                                                        </div><!-- end left -->
+
+                                                        <div class="pull-right">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="12 comments">
+                                                                <i class="material-icons">comment</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Bookmark">
+                                                                <i class="material-icons">bookmark_border</i>
+                                                            </a>
+                                                        </div><!-- end right -->
+                                                    </div><!-- end topic-meta -->
+
+                                                    <div class="topic-desc row-fluid clearfix">
+                                                        <div class="col-sm-2">
+                                                            <img src="assets\images\uploads\team_02.jpg" alt="" class="avatar img-circle img-responsive">
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                            <h4>Jeny Jahnson</h4>
+                                                            <small>Support Team</small>
+                                                            <p> The best way to use these Bootstrap menu on the web is with our skeleton codes. It's lightweight, easy to use, and hosted by MaxCDN. Learn how to use font-based icons in our developer guide.</p>
+                                                            <a href="single-knowlegde-base.html" class="readmore" title="">Continue reading →</a>
+                                                        </div>
+                                                    </div><!-- end tpic-desc -->
+
+                                                    <footer class="topic-footer clearfix">
+                                                        <div class="pull-left">
+                                                            <ul class="list-inline tags">
+                                                                <li><a href="#">Bootstrap</a></li>
+                                                                <li><a href="#">Web Design</a></li>
+                                                                <li><a href="#">Framework</a></li>
+                                                            </ul><!-- end tags -->
+                                                        </div>
+
+                                                        <div class="pull-right">
+                                                            <div class="customshare">
+                                                                 <div class="list">
+                                                                    <div class="btn btn-default btn-fab btn-fab-mini"><i class="material-icons">share</i>
+                                                                        <ul class="list-inline">
+                                                                            <li><a href="#" class="tw"><i class="fa fa-twitter"></i></a></li>
+                                                                            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+                                                                            <li><a href="#" class="gp"><i class="fa fa-google-plus"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </footer><!-- end topic -->
+                                                </div><!-- end panel-body -->
+                                            </div><!-- end panel-collapse -->
+                                        </article><!-- end article well -->
+                                    </div><!-- end panel -->
+
+                                    <div class="panel panel-default">
+                                        <article class="well btn-group-sm clearfix">
+                                            <div class="panel-heading" role="tab" id="headingThree">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <header class="topic-title clearfix">
+                                                            <h3>How to use our page builder module on single pages</h3>
+                                                            <small>Item name: Rio</small>
+                                                            <small>Version: 1.1</small>
+                                                        </header>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                                <div class="panel-body">
+                                                    <div class="topic-meta clearfix">
+                                                        <div class="pull-left">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Like">
+                                                                <i class="material-icons">thumb_up</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Un Like">
+                                                                <i class="material-icons">thumb_down</i>
+                                                            </a>
+                                                        </div><!-- end left -->
+
+                                                        <div class="pull-right">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="12 comments">
+                                                                <i class="material-icons">comment</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Bookmark">
+                                                                <i class="material-icons">bookmark_border</i>
+                                                            </a>
+                                                        </div><!-- end right -->
+                                                    </div><!-- end topic-meta -->
+
+                                                    <div class="topic-desc row-fluid clearfix">
+                                                        <div class="col-sm-2">
+                                                            <img src="assets\images\uploads\team_03.jpg" alt="" class="avatar img-circle img-responsive">
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                            <h4>Lisbon Prak</h4>
+                                                            <small>Support Team</small>
+                                                            <p> The best way to use these Bootstrap menu on the web is with our skeleton codes. It's lightweight, easy to use, and hosted by MaxCDN. Learn how to use font-based icons in our developer guide.</p>
+                                                            <a href="single-knowlegde-base.html" class="readmore" title="">Continue reading →</a>
+                                                        </div>
+                                                    </div><!-- end tpic-desc -->
+
+                                                    <footer class="topic-footer clearfix">
+                                                        <div class="pull-left">
+                                                            <ul class="list-inline tags">
+                                                                <li><a href="#">Bootstrap</a></li>
+                                                                <li><a href="#">Web Design</a></li>
+                                                                <li><a href="#">Framework</a></li>
+                                                            </ul><!-- end tags -->
+                                                        </div>
+
+                                                        <div class="pull-right">
+                                                            <div class="customshare">
+                                                                 <div class="list">
+                                                                    <div class="btn btn-default btn-fab btn-fab-mini"><i class="material-icons">share</i>
+                                                                        <ul class="list-inline">
+                                                                            <li><a href="#" class="tw"><i class="fa fa-twitter"></i></a></li>
+                                                                            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+                                                                            <li><a href="#" class="gp"><i class="fa fa-google-plus"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </footer><!-- end topic -->
+                                                </div><!-- end panel-body -->
+                                            </div><!-- end panel-collapse -->
+                                        </article><!-- end article well -->
+                                    </div><!-- end panel -->
+
+                                    <div class="panel panel-default">
+                                        <article class="well btn-group-sm clearfix">
+                                            <div class="panel-heading" role="tab" id="headingFour">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                        <header class="topic-title clearfix">
+                                                            <h3>How to change color schemes just a minute</h3>
+                                                            <small>Item name: Helper</small>
+                                                            <small>Version: 1.0</small>
+                                                        </header>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                                                <div class="panel-body">
+                                                    <div class="topic-meta clearfix">
+                                                        <div class="pull-left">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Like">
+                                                                <i class="material-icons">thumb_up</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Un Like">
+                                                                <i class="material-icons">thumb_down</i>
+                                                            </a>
+                                                        </div><!-- end left -->
+
+                                                        <div class="pull-right">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="12 comments">
+                                                                <i class="material-icons">comment</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Bookmark">
+                                                                <i class="material-icons">bookmark_border</i>
+                                                            </a>
+                                                        </div><!-- end right -->
+                                                    </div><!-- end topic-meta -->
+
+                                                    <div class="topic-desc row-fluid clearfix">
+                                                        <div class="col-sm-2">
+                                                            <img src="assets\images\uploads\team_04.jpg" alt="" class="avatar img-circle img-responsive">
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                            <h4>John Doe</h4>
+                                                            <small>Developer</small>
+                                                            <p> The best way to use these Bootstrap menu on the web is with our skeleton codes. It's lightweight, easy to use, and hosted by MaxCDN. Learn how to use font-based icons in our developer guide.</p>
+                                                            <a href="single-knowlegde-base.html" class="readmore" title="">Continue reading →</a>
+                                                        </div>
+                                                    </div><!-- end tpic-desc -->
+
+                                                    <footer class="topic-footer clearfix">
+                                                        <div class="pull-left">
+                                                            <ul class="list-inline tags">
+                                                                <li><a href="#">Bootstrap</a></li>
+                                                                <li><a href="#">Web Design</a></li>
+                                                                <li><a href="#">Framework</a></li>
+                                                            </ul><!-- end tags -->
+                                                        </div>
+
+                                                        <div class="pull-right">
+                                                            <div class="customshare">
+                                                                 <div class="list">
+                                                                    <div class="btn btn-default btn-fab btn-fab-mini"><i class="material-icons">share</i>
+                                                                        <ul class="list-inline">
+                                                                            <li><a href="#" class="tw"><i class="fa fa-twitter"></i></a></li>
+                                                                            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+                                                                            <li><a href="#" class="gp"><i class="fa fa-google-plus"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </footer><!-- end topic -->
+                                                </div><!-- end panel-body -->
+                                            </div><!-- end panel-collapse -->
+                                        </article><!-- end article well -->
+                                    </div><!-- end panel -->
+
+                                    <div class="panel panel-default">
+                                        <article class="well btn-group-sm clearfix">
+                                            <div class="panel-heading" role="tab" id="headingFive">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                                        <header class="topic-title clearfix">
+                                                            <h3>Getting starting post formats in WordPress blogs</h3>
+                                                            <small>Item name: Rio</small>
+                                                            <small>Version: 1.0</small>
+                                                        </header>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                                <div class="panel-body">
+                                                    <div class="topic-meta clearfix">
+                                                        <div class="pull-left">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Like">
+                                                                <i class="material-icons">thumb_up</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Un Like">
+                                                                <i class="material-icons">thumb_down</i>
+                                                            </a>
+                                                        </div><!-- end left -->
+
+                                                        <div class="pull-right">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="12 comments">
+                                                                <i class="material-icons">comment</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Bookmark">
+                                                                <i class="material-icons">bookmark_border</i>
+                                                            </a>
+                                                        </div><!-- end right -->
+                                                    </div><!-- end topic-meta -->
+
+                                                    <div class="topic-desc row-fluid clearfix">
+                                                        <div class="col-sm-2">
+                                                            <img src="assets\images\uploads\team_04.jpg" alt="" class="avatar img-circle img-responsive">
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                            <h4>John Doe</h4>
+                                                            <small>Developer</small>
+                                                            <p> The best way to use these Bootstrap menu on the web is with our skeleton codes. It's lightweight, easy to use, and hosted by MaxCDN. Learn how to use font-based icons in our developer guide.</p>
+                                                            <a href="single-knowlegde-base.html" class="readmore" title="">Continue reading →</a>
+                                                        </div>
+                                                    </div><!-- end tpic-desc -->
+
+                                                    <footer class="topic-footer clearfix">
+                                                        <div class="pull-left">
+                                                            <ul class="list-inline tags">
+                                                                <li><a href="#">Bootstrap</a></li>
+                                                                <li><a href="#">Web Design</a></li>
+                                                                <li><a href="#">Framework</a></li>
+                                                            </ul><!-- end tags -->
+                                                        </div>
+
+                                                        <div class="pull-right">
+                                                            <div class="customshare">
+                                                                 <div class="list">
+                                                                    <div class="btn btn-default btn-fab btn-fab-mini"><i class="material-icons">share</i>
+                                                                        <ul class="list-inline">
+                                                                            <li><a href="#" class="tw"><i class="fa fa-twitter"></i></a></li>
+                                                                            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+                                                                            <li><a href="#" class="gp"><i class="fa fa-google-plus"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </footer><!-- end topic -->
+                                                </div><!-- end panel-body -->
+                                            </div><!-- end panel-collapse -->
+                                        </article><!-- end article well -->
+                                    </div><!-- end panel -->
+
+                                    <div class="panel panel-default">
+                                        <article class="well btn-group-sm clearfix">
+                                            <div class="panel-heading" role="tab" id="headingSix">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                        <header class="topic-title clearfix">
+                                                            <h3>Using font icons on this template (Bonus: Material Icons)</h3>
+                                                            <small>Item name: Helper</small>
+                                                            <small>Version: 1.0</small>
+                                                        </header>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                                <div class="panel-body">
+                                                    <div class="topic-meta clearfix">
+                                                        <div class="pull-left">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Like">
+                                                                <i class="material-icons">thumb_up</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Un Like">
+                                                                <i class="material-icons">thumb_down</i>
+                                                            </a>
+                                                        </div><!-- end left -->
+
+                                                        <div class="pull-right">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="12 comments">
+                                                                <i class="material-icons">comment</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Bookmark">
+                                                                <i class="material-icons">bookmark_border</i>
+                                                            </a>
+                                                        </div><!-- end right -->
+                                                    </div><!-- end topic-meta -->
+
+                                                    <div class="topic-desc row-fluid clearfix">
+                                                        <div class="col-sm-2">
+                                                            <img src="assets\images\uploads\team_04.jpg" alt="" class="avatar img-circle img-responsive">
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                            <h4>John Doe</h4>
+                                                            <small>Developer</small>
+                                                            <p> The best way to use these Bootstrap menu on the web is with our skeleton codes. It's lightweight, easy to use, and hosted by MaxCDN. Learn how to use font-based icons in our developer guide.</p>
+                                                            <a href="single-knowlegde-base.html" class="readmore" title="">Continue reading →</a>
+                                                        </div>
+                                                    </div><!-- end tpic-desc -->
+
+                                                    <footer class="topic-footer clearfix">
+                                                        <div class="pull-left">
+                                                            <ul class="list-inline tags">
+                                                                <li><a href="#">Bootstrap</a></li>
+                                                                <li><a href="#">Web Design</a></li>
+                                                                <li><a href="#">Framework</a></li>
+                                                            </ul><!-- end tags -->
+                                                        </div>
+
+                                                        <div class="pull-right">
+                                                            <div class="customshare">
+                                                                 <div class="list">
+                                                                    <div class="btn btn-default btn-fab btn-fab-mini"><i class="material-icons">share</i>
+                                                                        <ul class="list-inline">
+                                                                            <li><a href="#" class="tw"><i class="fa fa-twitter"></i></a></li>
+                                                                            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+                                                                            <li><a href="#" class="gp"><i class="fa fa-google-plus"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </footer><!-- end topic -->
+                                                </div><!-- end panel-body -->
+                                            </div><!-- end panel-collapse -->
+                                        </article><!-- end article well -->
+                                    </div><!-- end panel -->
+
+                                    <div class="panel panel-default">
+                                        <article class="well btn-group-sm clearfix">
+                                            <div class="panel-heading" role="tab" id="headingSeven">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                                        <header class="topic-title clearfix">
+                                                            <h3>Rio Template: Updated New Version (1.2)</h3>
+                                                            <small>Item name: Rio</small>
+                                                            <small>Version: 1.2</small>
+                                                        </header>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                                <div class="panel-body">
+                                                    <div class="topic-meta clearfix">
+                                                        <div class="pull-left">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Like">
+                                                                <i class="material-icons">thumb_up</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Un Like">
+                                                                <i class="material-icons">thumb_down</i>
+                                                            </a>
+                                                        </div><!-- end left -->
+
+                                                        <div class="pull-right">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="12 comments">
+                                                                <i class="material-icons">comment</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Bookmark">
+                                                                <i class="material-icons">bookmark_border</i>
+                                                            </a>
+                                                        </div><!-- end right -->
+                                                    </div><!-- end topic-meta -->
+
+                                                    <div class="topic-desc row-fluid clearfix">
+                                                        <div class="col-sm-2">
+                                                            <img src="assets\images\uploads\team_04.jpg" alt="" class="avatar img-circle img-responsive">
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                            <h4>John Doe</h4>
+                                                            <small>Developer</small>
+                                                            <p> The best way to use these Bootstrap menu on the web is with our skeleton codes. It's lightweight, easy to use, and hosted by MaxCDN. Learn how to use font-based icons in our developer guide.</p>
+                                                            <a href="single-knowlegde-base.html" class="readmore" title="">Continue reading →</a>
+                                                        </div>
+                                                    </div><!-- end tpic-desc -->
+
+                                                    <footer class="topic-footer clearfix">
+                                                        <div class="pull-left">
+                                                            <ul class="list-inline tags">
+                                                                <li><a href="#">Bootstrap</a></li>
+                                                                <li><a href="#">Web Design</a></li>
+                                                                <li><a href="#">Framework</a></li>
+                                                            </ul><!-- end tags -->
+                                                        </div>
+
+                                                        <div class="pull-right">
+                                                            <div class="customshare">
+                                                                 <div class="list">
+                                                                    <div class="btn btn-default btn-fab btn-fab-mini"><i class="material-icons">share</i>
+                                                                        <ul class="list-inline">
+                                                                            <li><a href="#" class="tw"><i class="fa fa-twitter"></i></a></li>
+                                                                            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+                                                                            <li><a href="#" class="gp"><i class="fa fa-google-plus"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </footer><!-- end topic -->
+                                                </div><!-- end panel-body -->
+                                            </div><!-- end panel-collapse -->
+                                        </article><!-- end article well -->
+                                    </div><!-- end panel -->
+
+                                    <div class="panel panel-default">
+                                        <article class="well btn-group-sm clearfix">
+                                            <div class="panel-heading" role="tab" id="headingEight">
+                                                <div class="panel-title">
+                                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                                        <header class="topic-title clearfix">
+                                                            <h3>Milano Template: Getting starting edit any HTML files</h3>
+                                                            <small>Item name: Milano</small>
+                                                            <small>Version: 1.0</small>
+                                                        </header>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                                                <div class="panel-body">
+                                                    <div class="topic-meta clearfix">
+                                                        <div class="pull-left">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Like">
+                                                                <i class="material-icons">thumb_up</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Un Like">
+                                                                <i class="material-icons">thumb_down</i>
+                                                            </a>
+                                                        </div><!-- end left -->
+
+                                                        <div class="pull-right">
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="12 comments">
+                                                                <i class="material-icons">comment</i>
+                                                            </a>
+                                                            <a class="btn btn-default btn-fab btn-fab-mini" href="#" data-toggle="tooltip" data-placement="bottom" title="Bookmark">
+                                                                <i class="material-icons">bookmark_border</i>
+                                                            </a>
+                                                        </div><!-- end right -->
+                                                    </div><!-- end topic-meta -->
+
+                                                    <div class="topic-desc row-fluid clearfix">
+                                                        <div class="col-sm-2">
+                                                            <img src="assets\images\uploads\team_04.jpg" alt="" class="avatar img-circle img-responsive">
+                                                        </div>
+                                                        <div class="col-sm-10">
+                                                            <h4>John Doe</h4>
+                                                            <small>Developer</small>
+                                                            <p> The best way to use these Bootstrap menu on the web is with our skeleton codes. It's lightweight, easy to use, and hosted by MaxCDN. Learn how to use font-based icons in our developer guide.</p>
+                                                            <a href="single-knowlegde-base.html" class="readmore" title="">Continue reading →</a>
+                                                        </div>
+                                                    </div><!-- end tpic-desc -->
+
+                                                    <footer class="topic-footer clearfix">
+                                                        <div class="pull-left">
+                                                            <ul class="list-inline tags">
+                                                                <li><a href="#">Bootstrap</a></li>
+                                                                <li><a href="#">Web Design</a></li>
+                                                                <li><a href="#">Framework</a></li>
+                                                            </ul><!-- end tags -->
+                                                        </div>
+
+                                                        <div class="pull-right">
+                                                            <div class="customshare">
+                                                                 <div class="list">
+                                                                    <div class="btn btn-default btn-fab btn-fab-mini"><i class="material-icons">share</i>
+                                                                        <ul class="list-inline">
+                                                                            <li><a href="#" class="tw"><i class="fa fa-twitter"></i></a></li>
+                                                                            <li><a href="#" class="fb"><i class="fa fa-facebook"></i></a></li>
+                                                                            <li><a href="#" class="gp"><i class="fa fa-google-plus"></i></a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </footer><!-- end topic -->
+                                                </div><!-- end panel-body -->
+                                            </div><!-- end panel-collapse -->
+                                        </article><!-- end article well -->
+                                    </div><!-- end panel -->
+                                    <div class="panel panel-default">
+                                        <article class="well btn-group-sm clearfix">
+                                            <ul class="pagination">
+                                                <li class="disabled"><a href="javascript:void(0)">&laquo;</a></li>
+                                                <li class="active"><a href="javascript:void(0)">1</a></li>
+                                                <li><a href="javascript:void(0)">2</a></li>
+                                                <li><a href="javascript:void(0)">&raquo;</a></li>
+                                            </ul>
+                                        </article>
+                                    </div><!-- end panel -->
+                                </div><!-- end panel-group -->
+                            </aside><!-- end topic-list -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

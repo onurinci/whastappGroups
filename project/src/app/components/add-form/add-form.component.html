@@ -1,0 +1,22 @@
+<div class="widget nopadding clearfix">
+    <div class="panel panel-primary nopadding">
+        <div class="panel-heading">
+            <h3 class="panel-title">Yeni grup ekleyin!</h3>
+        </div>
+        <div class="panel-body">
+            <form [formGroup]="form" (ngSubmit)="formSubmit(form.value)" class="site-search">
+                <div class="form-group label-floating">
+                    <label class="control-label" for="focusedInput2">örneğin, yazılım</label>
+                    <input formControlName="Name" class="form-control" id="focusedInput2" type="text" />
+                </div>
+                <div class="form-group clearfix">
+                    <div class="submit-button">
+                        <button type="submit" class="btn btn-raised btn-info gr">
+                            <i class="material-icons">add</i> Ekle
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

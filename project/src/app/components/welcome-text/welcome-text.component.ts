@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from 'src/app/services/global.service';
 
 @Component({
   selector: 'app-welcome-text',
@@ -6,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeTextComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _globalService: GlobalService) { }
 
+  addedChangeDefaultValue = true;
   ngOnInit() {
+    
+  }
+
+  addButton() {
+    this.addedChangeDefaultValue = !this.addedChangeDefaultValue;
+    this._globalService.addedChange(!this.addedChangeDefaultValue);
   }
 
 }
