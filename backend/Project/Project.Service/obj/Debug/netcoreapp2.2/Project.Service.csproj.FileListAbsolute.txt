@@ -1,0 +1,15 @@
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\bin\Debug\netcoreapp2.2\appsettings.json
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\bin\Debug\netcoreapp2.2\Project.Service.deps.json
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\bin\Debug\netcoreapp2.2\Project.Service.runtimeconfig.json
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\bin\Debug\netcoreapp2.2\Project.Service.runtimeconfig.dev.json
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\bin\Debug\netcoreapp2.2\Project.Service.dll
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\bin\Debug\netcoreapp2.2\Project.Service.pdb
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\obj\Debug\netcoreapp2.2\Project.Service.csprojAssemblyReference.cache
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\obj\Debug\netcoreapp2.2\Project.Service.RazorAssemblyInfo.cache
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\obj\Debug\netcoreapp2.2\Project.Service.RazorAssemblyInfo.cs
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\obj\Debug\netcoreapp2.2\Project.Service.AssemblyInfoInputs.cache
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\obj\Debug\netcoreapp2.2\Project.Service.AssemblyInfo.cs
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\obj\Debug\netcoreapp2.2\Project.Service.RazorTargetAssemblyInfo.cache
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\obj\Debug\netcoreapp2.2\Project.Service.dll
+C:\ONUR\2_kisisel_projeler\Github\whastappGroups\backend\Project\Project.Service\obj\Debug\netcoreapp2.2\Project.Service.pdb
