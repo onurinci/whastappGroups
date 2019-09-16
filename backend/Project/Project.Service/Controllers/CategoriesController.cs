@@ -22,6 +22,15 @@ namespace Project.Service.Controllers
             return await _db.Categories.AsNoTracking().ToListAsync();
         }
 
+        // GET api/categories/listIncGroups?count=5
+        [HttpGet]
+        public async Task<List<Categories>> ListIncGroups(int count = 10)
+        {
+            // ? take
+            var data = await _db.Categories.Include("Groups").ToListAsync();
+            return data;
+        }
+
         // POST api/categories/add
         [HttpPost]
         public async Task<int> Add([FromBody] Categories postData)

@@ -16,6 +16,10 @@ export class ApiService {
     return this._http.get<Categories[]>(`${this.apiBaseUrl}/api/categories/list`);
   }
 
+  loadIncGroups(): Observable<any[]> {
+    return this._http.get<any[]>(`${this.apiBaseUrl}/api/categories/listIncGroups`);
+  }
+
   loadGroups(): Observable<any[]> {
     return this._http.get<any[]>(`${this.apiBaseUrl}/api/group/list`);
   }

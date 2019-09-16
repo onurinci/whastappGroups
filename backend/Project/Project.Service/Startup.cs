@@ -24,7 +24,7 @@ namespace Project.Service
                     .AllowAnyMethod()
                     .AllowAnyHeader();
             }));
-            services.AddDbContext<AppDbContext>(ServiceLifetime.Singleton);
+            services.AddDbContext<AppDbContext>(ServiceLifetime.Scoped);
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
